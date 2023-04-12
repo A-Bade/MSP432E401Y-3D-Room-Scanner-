@@ -1,0 +1,80 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Abdurahman Bade, McMaster Computer Engineering 2DX3, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      CMSIS_AGDI.dll V1.33.15.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\Darkb\Documents\ECE_2\dx lab 8\2DX3_3D_Spatial_Mapping_Project-main\2DX_2022_Studio 8C\2dx_studio_8c.uvprojx
+Project File Date:  04/12/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target '2DX3 Final Project (badea)'
+assembling startup_msp432e401y_uvision.s...
+compiling uart.c...
+compiling PLL.c...
+compiling SysTick.c...
+compiling onboardLEDs.c...
+compiling VL53L1X_api.c...
+vl53l1_platform_2dx4.c(329): warning: incompatible pointer types passing 'uint32_t *' (aka 'unsigned int *') to parameter of type 'uint8_t *' (aka 'unsigned char *') [-Wincompatible-pointer-types]
+        writeI2C(&data, 4);     
+                 ^~~~~
+vl53l1_platform_2dx4.c(142): note: passing argument to parameter 'pdata' here
+int8_t writeI2C(uint8_t *pdata, uint32_t count){
+                         ^
+1 warning generated.
+compiling vl53l1_platform_2dx4.c...
+compiling system_msp432e401y.c...
+linking...
+Program Size: Code=4838 RO-data=890 RW-data=8 ZI-data=2664  
+".\Objects\2DX3 Final Project.axf" - 0 Error(s), 1 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: TexasInstruments
+                http://software-dl.ti.com/msp430/msp430_public_sw/mcu/msp430/msp432cmsis/latest/exports/TexasInstruments.MSP432E4_DFP.3.2.6.pack
+                TexasInstruments.MSP432E4_DFP.3.2.6
+                Device Family Pack for Texas Instruments SimpleLink(TM) MSP432E4 Series
+   * Component: Startup Version: 3.2.3
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_2DX3_Final_Project__badea_
+  C:/Users/Darkb/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/Darkb/AppData/Local/Arm/Packs/TexasInstruments/MSP432E4_DFP/3.2.6/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: TexasInstruments::Device:Startup:3.2.3
+      Source file:   Device/Source/system_msp432e401y.c
+      Source file:   Examples/EmptyMain/main.c
+      Source file:   Device/Source/startup_msp432e401y_uvision.s
+      Source file:   Examples/BlinkLED/blinkLED.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
